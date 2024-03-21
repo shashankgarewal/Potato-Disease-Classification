@@ -1,0 +1,1 @@
+docker run -t --rm -p 8501:8501 -v "C:\Users\Monika\Projects\Potato Disease Classification:/potato_disease_classification" tensorflow/serving --rest_api_port=8501 --model_config_file=potato_disease_classification/backend/tfserving.config --entry_point=/bin/bash 
